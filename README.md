@@ -1,7 +1,12 @@
 # Newsletter<img align="right" src="https://img.shields.io/static/v1?label=STATUS&message=Está %20Pronto&color=green&style=for-the-badge"/>
 
 
+<div align="center" >
+    <img width="725rem" src="https://servidor-estaticos-ten.vercel.app/newsletter.png" alt="imagem">
+</div> 
+<br>
 
+> Para ver o projeto rodando você pode acessar este [Link](https://newsletter-zeta-one.vercel.app/).
 
 <h2>💻 Tecnologias utilizadas</h2>
 
