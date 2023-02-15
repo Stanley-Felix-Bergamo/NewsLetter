@@ -1,0 +1,25 @@
+@use "./variables";
+.news {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    border-radius: 5px;
+    &__letter {
+        background-color: variables.$colorWhite;
+        padding: 24px 24px;
+        margin-bottom: 50px;
+
+        &__title {
+            padding-top: 22px;
+            padding-bottom: 8px;
+        }
+
+        &__subTitle {
+            display: flex;
+            justify-content: space-between;
+
+            &__img {
+                width: 20px;
+            }
+        }
+    }
+}
