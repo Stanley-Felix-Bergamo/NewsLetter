@@ -21,8 +21,9 @@ function mimificarImagem() {
         .pipe(gulp.dest('dist/images'));
 }
 
+exports.default = gulp.parallel(compilarSass, mimificarImagem);
 
-exports.default = function () {
-    gulp.watch('./src/styles/*.scss', { ignoreInitial: false }, gulp.series(compilarSass));
-    gulp.watch('./src/images/*', { ignoreInitial: false }, gulp.series(mimificarImagem));
+exports.watch = function () {
+    gulp.watch('./src/styles/*.scss', { ignoreInitial: false }, gulp.parallel(compilarSass));
+    gulp.watch('./src/images/*', { ignoreInitial: false }, gulp.parallel(mimificarImagem));
 }
