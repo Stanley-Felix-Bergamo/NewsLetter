@@ -1,5 +1,5 @@
 @use "./variables";
-
+@use "./header";
 * {
     margin: 0;
     padding: 0;
@@ -11,6 +11,18 @@
 
 body {
     background-color: variables.$colorWhiteDark;
+}
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 900px;
+
+    @media (max-width: 768px) {
+        max-width: 80%;
+    }
+    @media (max-width: 1024px) {
+        max-width: 90%;
+    }
 }
 
 @mixin text($fontSize: 18px) {
@@ -30,9 +42,10 @@ body {
 .text--logo {
     @include text(24px);
     color: variables.$colorWhite;
-    
+
     @media (max-width: 768px) {
         @include text(18px);
+        color: variables.$colorWhite;
     }
 }
 
@@ -41,7 +54,6 @@ body {
     font-weight: 500;
     color: variables.$colorWhite;
     font-family: "Inter", sans-serif;
-
     @media (max-width: 768px) {
         @include text(14px);
     }

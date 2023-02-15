@@ -1,0 +1,43 @@
+@use "./variables";
+
+.header {
+    background-image: linear-gradient(variables.$colorPurple, variables.$colorBlue);
+    padding: 41px 0;
+
+    &__texto {
+        padding-bottom: 73px;
+    }
+    &__campo {
+        display: flex;
+
+        &__imagem {
+            position: absolute;
+            margin: 20px 0 20px 20px;
+            max-width: 23.44px;
+        }
+        &__buscar {
+            padding: 21px 0;
+            position: relative;
+            padding-left: 64px;
+            width: 100%;
+            border: none;
+            border-radius: 5px;
+            background: variables.$colorGrayLight;
+
+            &::-webkit-input-placeholder {
+                font-family: "Inter", sans-serif;
+                font-weight: 500;
+                font-size: 18px;
+                color: variables.$colorWhite;
+                opacity: 0.5;
+            }
+        }
+        @media (max-width: 768px) {
+            &__buscar {
+                &::-webkit-input-placeholder {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
