@@ -1,4 +1,4 @@
-# Newsletter<img align="right" src="https://img.shields.io/static/v1?label=STATUS&message=Está %20Em Andamento&color=red&style=for-the-badge"/>
+# Newsletter<img align="right" src="https://img.shields.io/static/v1?label=STATUS&message=Está %20Pronto&color=green&style=for-the-badge"/>
 
 
 
