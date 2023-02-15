@@ -58,6 +58,9 @@ body {
     font-family: "Inter", sans-serif;
     @media (max-width: 768px) {
         @include text(14px);
+        font-weight: 500;
+        color: variables.$colorWhite;
+        font-family: "Inter", sans-serif;
     }
 }
 
@@ -74,5 +77,6 @@ body {
     color: variables.$colorGrayDark;
     @media (max-width: 768px) {
         @include text(18px);
+        color: variables.$colorGrayDark;
     }
 }
