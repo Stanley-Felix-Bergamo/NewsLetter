@@ -1,7 +1,64 @@
+@use "./variables";
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Lexend Deca", sans-serif;
     text-decoration: none;
     list-style: none;
+}
+
+body {
+    background-color: variables.$colorWhiteDark;
+}
+
+@mixin text($fontSize: 18px) {
+    font-weight: 400;
+    font-size: $fontSize;
+    color: variables.$colorGray;
+}
+
+.text {
+    @include text;
+
+    @media (max-width: 768px) {
+        @include text(14px);
+    }
+}
+
+.text--logo {
+    @include text(24px);
+    color: variables.$colorWhite;
+    
+    @media (max-width: 768px) {
+        @include text(18px);
+    }
+}
+
+.text--lupa {
+    @include text;
+    font-weight: 500;
+    color: variables.$colorWhite;
+    font-family: "Inter", sans-serif;
+
+    @media (max-width: 768px) {
+        @include text(14px);
+    }
+}
+
+.text--date {
+    @include text(16px);
+
+    @media (max-width: 768px) {
+        @include text(14px);
+    }
+}
+
+.text--title {
+    @include text(26px);
+    color: variables.$colorGrayDark;
+    @media (max-width: 768px) {
+        @include text(18px);
+    }
 }
